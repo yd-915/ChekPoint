@@ -25,8 +25,8 @@ $ npm run dev
 
 Home page
 
-![](screenshot_1.png)
+![](screenshot_1.jpeg)
 
 Application
 
-![](screenshot_2.png)
+![](screenshot_2.jpeg)
