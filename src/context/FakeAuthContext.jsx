@@ -41,7 +41,7 @@ function AuthProvider({ children }) {
 
   function login(email, password) {
     if (email === FAKE_USER.email && password === FAKE_USER.password)
-      dispatch({ type: "login", payload: email, password });
+      dispatch({ type: "login", payload: FAKE_USER });
   }
 
   function logout() {
@@ -49,7 +49,7 @@ function AuthProvider({ children }) {
   }
 
   return (
-    <AuthContext.Provider value={(user, isAuthenticated, login, logout)}>
+    <AuthContext.Provider value={{ user, isAuthenticated, login, logout }}>
       {children}
     </AuthContext.Provider>
   );
@@ -57,8 +57,11 @@ function AuthProvider({ children }) {
 
 function useAuth() {
   const context = useContext(AuthContext);
+
   if (context === undefined)
     throw new Error("AuthContext was used outside of AuthProvider");
+
+  return context;
 }
 
 export { AuthProvider, useAuth };
