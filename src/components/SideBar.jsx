@@ -4,9 +4,7 @@ import Footer from "./Footer";
 import { Outlet } from "react-router-dom";
 
 function SideBar() {
-  return (
-    <div className="sidebar" style={styles.sidebar}/>
-const styles = {
+  const styles = {
    sidebar {
   flex-basis: 56rem;
   background-color: var(--color-dark--1);
@@ -19,6 +17,8 @@ const styles = {
 }
   };
 
+  return (
+    <div className="sidebar" style={styles.sidebar}/>
  <Logo/>
       <AppNav/>
 
