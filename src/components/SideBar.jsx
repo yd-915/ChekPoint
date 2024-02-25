@@ -9,7 +9,6 @@ function SideBar() {
   flex-basis: 56rem;
   background-color: var(--color-dark--1);
   padding: 3rem 5rem 3.5rem 5rem;
-
   display: flex;
   flex-direction: column;
   align-items: center;
