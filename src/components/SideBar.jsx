@@ -6,12 +6,12 @@ import { Outlet } from "react-router-dom";
 function SideBar() {
   const styles = {
    sidebar: {
-  flex-basis: 56rem,
-  background-color: var(--color-dark--1),
+  flexBasis: 56rem,
+  backgroundColor: var(--color-dark--1),
   padding: 3rem 5rem 3.5rem 5rem,
   display: flex,
-  flex-direction: column,
-  align-items: center,
+  flexDirection: column,
+  alignItems: center,
   height: calc(100vh - 4.8rem),
 }
   };
